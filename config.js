@@ -10,12 +10,12 @@ config = {
     url: process.env.HEROKU_URL,
     mail: {
       transport: 'SMTP',
-      host: 'smtp.mandrillapp.com',
+      host: 'smtp.sendgrid.net',
       options: {
-        service: 'Mandrill',
+        service: 'SendGrid',
         auth: {
-          user: process.env.MANDRILL_USERNAME,
-          pass: process.env.MANDRILL_APIKEY
+          user: process.env.SENDGRID_USERNAME,
+          pass: process.env.SENDGRID_APIKEY
         }
       }
     },
