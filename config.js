@@ -15,7 +15,7 @@ config = {
         service: 'SendGrid',
         auth: {
           user: process.env.SENDGRID_USERNAME,
-          pass: process.env.SENDGRID_APIKEY
+          pass: process.env.SENDGRID_PASSWORD
         }
       }
     },
